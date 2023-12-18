@@ -1,0 +1,234 @@
+:root{
+    --fondo:#f2f2f2;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: #055c55;}
+   
+    
+
+.showcase{
+    width: 100%;
+    height: 950px;
+    background-image:url("../img/cabecera2.jpg");
+    background-size:cover ;
+    background-attachment: fixed ;
+    background-position:center;
+   }
+
+nav{
+    width:100%;
+    background: rgb(22, 143, 42);
+}
+
+.nav1{
+    height: 80px;
+    background: transparent;
+    color: #fff;
+}
+
+
+
+.contenedor-nav{
+    width: 90%;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+nav .enlaces{
+              display: flex;
+              justify-content:space-between;
+              align-items:center;}
+
+
+nav .enlaces a{
+    display:inline-block;
+    padding: 5px 0;
+    margin-left: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: #f2f2f2;
+    }
+
+nav .enlaces a:hover{ transition:0.8s;
+                     border-bottom:3px solid #da3a1e9c;
+                    }
+
+.logo, .logo img{ height: 80px;  } 
+
+.cartel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+ }
+
+.cartel>h1 {  color:  #0a9b8f;
+             font-size: 200px;} /* --<h1>-BEL*/
+
+.cartel>h2{ color: #380c03;
+            font-size: 30px;/*--<h2>-diseño*/
+            font-weight: 300;
+            margin-top: 10px;}
+
+.cartel>p{ margin-top: 20px;}
+ 
+
+
+/************!!!!!MAIN!!!!!!!!!!!******************/  
+.container{
+          width: 90%;
+          height: auto;
+          margin: auto;
+          margin-top: 50px;
+}
+
+/*****************************NEWS CARDS*********************************************/
+
+/* news cards*/
+.new-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 25px;
+    margin:10px 0;
+    margin-top: 20px;
+}
+
+.new-cards img{
+    width: 100%;
+    height: 410px;
+    background-size:100% 100%;
+    background-size: cover; 
+   
+}
+
+.new-cards img:hover{
+     transform: scale(1.20);
+     transition: 1s;
+     cursor: pointer; 
+     
+    }
+   
+
+
+.new-cards h3{
+    font-size:20px;
+    margin:10px 0;
+    color: #9e4904;
+}
+
+.new-cards p{ color: #9e4904;}
+
+.new-cards a{
+     color: #e68910;
+     display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px;
+    padding:0 10px ;
+  }
+
+.new-cards>a:hover{
+    background:#da3a1e9c ;
+    border-radius:10px solid color#da3a1e9c ;
+    padding:0px 10px ;
+}
+
+
+hr {border-color:#da3a1e9c;border:14px;}   
+
+/*******************************FOTTER********************************************************/
+
+.footer{
+    background:#df7c3b ;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    
+   margin-top: 120px;
+}
+
+footer > h3{
+    padding-top: 15px;
+}
+
+footer > p{
+    padding-top: 10px;
+}
+
+form{
+    width:450px;
+    margin:auto;
+    background: rgba(0,0,0,0.4);
+    padding:10px 20px;
+    box-sizing:border-box;
+    margin-top:20px;
+    border-radius:7px;
+}
+
+form > h2{
+    color:#fff ;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom:20px;
+}
+
+.text-input,.text-area-input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+.text-area-input{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.btn-envio{
+    width: 100%;
+    background: #eb8d40;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 30px ;
+    border:transparent;
+    outline: none;
+   
+}
+
+/***********************************MEDIA QUERY****************************************************************/
+@media (max-width:600px){
+   
+.new-cards{ width:100%;
+            grid-template-columns:  1fr ;}
+    
+.content-card{ width:100%; }
+
+.new-cards img:hover{ transform: scale(1);}
+
+}
